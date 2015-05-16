@@ -104,7 +104,7 @@ target_link_libraries(factoint28inter
 
 find_package(Doxygen QUIET)
 
-if(DEFINED DOXYGEN_FOUND)
+if(DOXYGEN_FOUND)
     message(STATUS "Doxygen found, doc target available")
     set(DOXYGEN_DOXYFILE "${AUTOGEN_OUTPUT_PATH}/Doxyfile")
     set(DOXYGEN_OUTPUT_DIR "${CMAKE_BINARY_DIR}/doc")
@@ -123,7 +123,7 @@ if(DEFINED DOXYGEN_FOUND)
 
     file(MAKE_DIRECTORY "${DOXYGEN_OUTPUT_DIR}")
 
-    if(DEFINED DOXYGEN_DOT_FOUND)
+    if(DOXYGEN_DOT_FOUND)
         message(STATUS "DOT found, generating Doxygen DOT graphics")
         set(DOXYGEN_HAVE_DOT "YES")
     else()
