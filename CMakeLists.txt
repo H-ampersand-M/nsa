@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 2.8)
 project(NSA)
 set(NSA_VERSION_MAJOR 1)
 set(NSA_VERSION_MINOR 0)
-set(NSA_VERSION_PATCH 0)
+set(NSA_VERSION_PATCH 1)
 
 
 if(NOT CMAKE_BUILD_TYPE)
